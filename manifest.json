@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Facebook Inbox Helper",
+  "description": "Acelera el proceso de envia mensajes en la Inbox de Facebook para Paginas",
+  "version": "0.0.1",
+  "icons": {
+    "48": "icon.png"
+  },
+	"content_scripts": [{
+        "js": ["contentscript.js"],
+        "matches": ["https://github.com/*"]
+  }],
+  "permissions": ["tabs", "<all_urls>"],
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+	"web_accessible_resources": [
+    "scripts.js"
+  ]
+}
